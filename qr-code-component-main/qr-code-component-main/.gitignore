@@ -1,0 +1,35 @@
+#####################################################################
+# STRICT WHITELISTING .GITIGNORE
+# This file ignores everything EXCEPT the files and folders explicitly
+# listed below.
+#
+# Assumes this file is placed inside the 'qr-code-component-main/qr-code-component-main/' directory.
+#####################################################################
+
+# 1. IGNORE EVERYTHING
+# This pattern matches all files in the current and subdirectories.
+*
+
+# 2. ALLOW DIRECTORY TRAVERSAL
+# This is the crucial step: un-ignore all subdirectories so Git can
+# look inside them for whitelisted files.
+!*/
+
+# 3. WHITELIST CORE PROJECT FILES/FOLDERS
+
+# Keep the .gitignore file itself
+!.gitignore
+
+# Whitelist the essential files inside this directory:
+!index.html
+!README.md
+!styles.css
+
+# Whitelist the 'images' folder and its contents recursively:
+!images/
+
+# 4. RE-IGNORE DESIGN/STYLE FOLDERS
+# Since we unignored all directories globally with '!*/', we must
+# re-ignore the specific directories we DON'T want tracked.
+design/
+style-guide/
