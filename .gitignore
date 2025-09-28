@@ -3,7 +3,7 @@
 # This file ignores everything EXCEPT the files and folders explicitly
 # listed below.
 #
-# Assumes this file is placed inside the 'qr-code-component-main/qr-code-component-main/' directory.
+# Assumes this file is placed in the root of the Git repository.
 #####################################################################
 
 # 1. IGNORE EVERYTHING
